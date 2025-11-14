@@ -13,3 +13,7 @@ Los archivos de más alto nivel en un proyecto de angular son `index.html, style
 ## Create home component
 
 en esta sección se creo el primer componente de la aplicación usando el comando `ng generate component <nombre del componente>` el componente se crea en la carpeta `app` con el nombre seleccionado por ejemplo `app/home` dentro de la carpeta se crea un archivo `home.ts` donde tiene las siguientes propiedades selector para identificar como se llama el componente en los archivos que contengan html, imports son para declarar si nuestro componente tiene dependencias de otros archivos, template o templateUrl es para definir la estructura del componente con html y por ultimo styles o styleUrls es para definir el diseño del componente ya sea en línea o con un archivo separado.
+
+## Create housing location component
+
+en este episodio se creó un nuevo componente llamado `housing-location` para añadir los resultados de busqueda de las casas, crearle un archivo css separado, enlazarlo con la propiedad `styleUrls` e importarlos en el componente de `home`.
