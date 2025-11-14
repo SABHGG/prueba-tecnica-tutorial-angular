@@ -41,3 +41,7 @@ la directiva `@for` se usa para recorrer dinámicamente datos para pasarlos a lo
 ## Angular services
 
 los servicios en Angular sirven para separar funciones, llamadas a APIs y estados. estos servicios pueden tener diferentes alcances dentro del app según una propiedad del servicio llamada `providedIn: "root"` donde esta es la más común y la más recomendada para la mayoría de los servicios. estos funcionan mediante la inyección de dependencias donde esta le suministra la función, la llamada de la API o los estados al componente que lo necesitan.
+
+## Add routing
+
+para activar las rutas en angular primero debemos importar el proveedor llamado `provideRouter` y la configuración de las rutas en el archivo `main.ts`. la configuración de las rutas importamos el `Routes` dentro de ese modulo vamos a definir las rutas y los componentes relacionados. en el archivo `app.ts` importamos `RouterLink` los utilizamos para definir en etiquetas HTML redireccionamiento utilizando las rutas definidas `[routerLink]="['/']"` y `RouterOutlet` es un lienzo en blanco cuando se realiza una coincidencia con una ruta ya definía este carga dinámicamente el componente.
