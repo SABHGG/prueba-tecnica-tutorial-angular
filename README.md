@@ -17,3 +17,7 @@ en esta sección se creo el primer componente de la aplicación usando el comand
 ## Create housing location component
 
 en este episodio se creó un nuevo componente llamado `housing-location` para añadir los resultados de busqueda de las casas, crearle un archivo css separado, enlazarlo con la propiedad `styleUrls` e importarlos en el componente de `home`.
+
+## Create an interface
+
+las interfaces son una parte importante en el modelado de entrada de datos para una aplicación en angular. esta nos permite definir que campos, su tipo y cuales son sus restricciones tiene para tener la certeza de que los datos que entran al componente sean los correctos para despues visualizar los datos.
