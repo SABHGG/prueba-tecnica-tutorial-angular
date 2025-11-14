@@ -21,3 +21,7 @@ en este episodio se creó un nuevo componente llamado `housing-location` para a�
 ## Create an interface
 
 las interfaces son una parte importante en el modelado de entrada de datos para una aplicación en angular. esta nos permite definir que campos, su tipo y cuales son sus restricciones tiene para tener la certeza de que los datos que entran al componente sean los correctos para despues visualizar los datos.
+
+## Add inputs to components
+
+en esta sección nos enseñan como añadir entradas en los componentes con el método `{ input }` de angular core y como hacer que las propiedades de la interfaz sean requeridas cuando se colocan en el elemento padre del componente este es la propiedad del método input para definir si es requerido o no `input.required<Interfaz de datos>()`
