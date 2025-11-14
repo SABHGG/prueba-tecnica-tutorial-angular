@@ -29,3 +29,7 @@ en esta sección nos enseñan como añadir entradas en los componentes con el m�
 ## Add property binding to components
 
 en esta sección nos enseñan a agregar la propiedad que definimos en la clase del componente hijo para que cuando se defina en el componente padre no sea tratado como una cadena de texto y si como una propiedad del componente usando la sintaxis `<componente [atributo] = "valor" />`.
+
+## Add dynamic values to template
+
+la interpolación es la forma en que angular puede tomar los datos leídos por el método `input` y expresiones de JavaScript para hacer que el componente adquiera valores dinámicos enviados desde del componente padre o definidos desde el propio componente con la condición de que siempre están validados por el interfaz. para utilizar la interpolación debemos utilizar la expresión `{{ }}`.
