@@ -37,3 +37,7 @@ la interpolación es la forma en que angular puede tomar los datos leídos por e
 ## Use the `@for` block in templates
 
 la directiva `@for` se usa para recorrer dinámicamente datos para pasarlos a los templates, tiene una similitud con el bucle for de JavaScript pero con claras diferencias como la expresión `track` que permite tener una relación entre los datos y los nodos del DOM de la página. ayudando en el rendimiento de la página e identificando cada elemento renderizado.
+
+## Angular services
+
+los servicios en Angular sirven para separar funciones, llamadas a APIs y estados. estos servicios pueden tener diferentes alcances dentro del app según una propiedad del servicio llamada `providedIn: "root"` donde esta es la más común y la más recomendada para la mayoría de los servicios. estos funcionan mediante la inyección de dependencias donde esta le suministra la función, la llamada de la API o los estados al componente que lo necesitan.
