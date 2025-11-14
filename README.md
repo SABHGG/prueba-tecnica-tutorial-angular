@@ -25,3 +25,7 @@ las interfaces son una parte importante en el modelado de entrada de datos para 
 ## Add inputs to components
 
 en esta sección nos enseñan como añadir entradas en los componentes con el método `{ input }` de angular core y como hacer que las propiedades de la interfaz sean requeridas cuando se colocan en el elemento padre del componente este es la propiedad del método input para definir si es requerido o no `input.required<Interfaz de datos>()`
+
+## Add property binding to components
+
+en esta sección nos enseñan a agregar la propiedad que definimos en la clase del componente hijo para que cuando se defina en el componente padre no sea tratado como una cadena de texto y si como una propiedad del componente usando la sintaxis `<componente [atributo] = "valor" />`.
