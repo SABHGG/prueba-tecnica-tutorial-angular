@@ -33,3 +33,7 @@ en esta sección nos enseñan a agregar la propiedad que definimos en la clase d
 ## Add dynamic values to template
 
 la interpolación es la forma en que angular puede tomar los datos leídos por el método `input` y expresiones de JavaScript para hacer que el componente adquiera valores dinámicos enviados desde del componente padre o definidos desde el propio componente con la condición de que siempre están validados por el interfaz. para utilizar la interpolación debemos utilizar la expresión `{{ }}`.
+
+## Use the `@for` block in templates
+
+la directiva `@for` se usa para recorrer dinámicamente datos para pasarlos a los templates, tiene una similitud con el bucle for de JavaScript pero con claras diferencias como la expresión `track` que permite tener una relación entre los datos y los nodos del DOM de la página. ayudando en el rendimiento de la página e identificando cada elemento renderizado.
