@@ -49,3 +49,7 @@ para activar las rutas en angular primero debemos importar el proveedor llamado 
 ## customize the details page
 
 para obtener los datos relacionados con las rutas ya sean parámetros o parámetros de consulta tenemos que usar el módulo `ActivatedRoute` en aquellos componentes que requieren obtener los parámetros de la URL, luego pasárselos a los servicios y al finalizar los template con el proposito de que muestren los datos. unas de sus propiedades son `snapshot.params['id']` esto sirve para obtener el parámetro de la URL y para parámetros de consulta utilizamos `this.route.snapshot.queryParams["filter"]`.
+
+## intregrate Angular forms
+
+para integrar formularios en Angular necesitamos importar `FormControl, FormGroup y ReactiveFormsModule` en el componente que necesitamos usar formularios. para contener los campos del formulario usamos `FormGroup` a su vez, para definir los campos usamos el `FormControl` especificando su valor inicial y su tipo de dato. luego en la plantilla enlazamos la propiedad `[formGroup]="nombre del formulario"` a la etiqueta form para tener el control, despues utilizamos la directiva `formControlName="nombre del campo"`en los inputs para vincular la etiqueta html con la clase que creamos con `FormGroup`, luego usamos `(submit)="Function()"` en la etiqueta form para enviar los datos al servicio.
