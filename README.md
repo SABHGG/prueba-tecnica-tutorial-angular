@@ -57,3 +57,7 @@ para integrar formularios en Angular necesitamos importar `FormControl, FormGrou
 ## Add Search funtionality
 
 para acceder y añadir funcionalidades sin utilizar los formularios de Angular debemos buscar aquel elemento de la plantilla donde queremos extraer la información y darle una variable que lo identifique `#filter` para después acceder a sus valores. en otra etiqueta usamos los eventos del elemento con `(evento)` para llamar una función ya sea dentro de la clase o a un servicio ya establecido.
+
+## Add HTTP communication
+
+en esta sección se centran en cómo obtener datos mediante el uso de API cambiando algunos parámetros en los servicios y en los constructores de las clases de los componentes, en los servicios modificamos las funciones para que sean asíncronas y realicen la petición a una URL para obtener los datos de las casas utilizando `fetch` y en los constructores utilizamos `function().then` lo usamos para interactuar con la petición y acceder a los datos.
