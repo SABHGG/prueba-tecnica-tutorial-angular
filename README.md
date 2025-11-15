@@ -53,3 +53,7 @@ para obtener los datos relacionados con las rutas ya sean parámetros o parámet
 ## intregrate Angular forms
 
 para integrar formularios en Angular necesitamos importar `FormControl, FormGroup y ReactiveFormsModule` en el componente que necesitamos usar formularios. para contener los campos del formulario usamos `FormGroup` a su vez, para definir los campos usamos el `FormControl` especificando su valor inicial y su tipo de dato. luego en la plantilla enlazamos la propiedad `[formGroup]="nombre del formulario"` a la etiqueta form para tener el control, despues utilizamos la directiva `formControlName="nombre del campo"`en los inputs para vincular la etiqueta html con la clase que creamos con `FormGroup`, luego usamos `(submit)="Function()"` en la etiqueta form para enviar los datos al servicio.
+
+## Add Search funtionality
+
+para acceder y añadir funcionalidades sin utilizar los formularios de Angular debemos buscar aquel elemento de la plantilla donde queremos extraer la información y darle una variable que lo identifique `#filter` para después acceder a sus valores. en otra etiqueta usamos los eventos del elemento con `(evento)` para llamar una función ya sea dentro de la clase o a un servicio ya establecido.
