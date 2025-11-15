@@ -45,3 +45,7 @@ los servicios en Angular sirven para separar funciones, llamadas a APIs y estado
 ## Add routing
 
 para activar las rutas en angular primero debemos importar el proveedor llamado `provideRouter` y la configuración de las rutas en el archivo `main.ts`. la configuración de las rutas importamos el `Routes` dentro de ese modulo vamos a definir las rutas y los componentes relacionados. en el archivo `app.ts` importamos `RouterLink` los utilizamos para definir en etiquetas HTML redireccionamiento utilizando las rutas definidas `[routerLink]="['/']"` y `RouterOutlet` es un lienzo en blanco cuando se realiza una coincidencia con una ruta ya definía este carga dinámicamente el componente.
+
+## customize the details page
+
+para obtener los datos relacionados con las rutas ya sean parámetros o parámetros de consulta tenemos que usar el módulo `ActivatedRoute` en aquellos componentes que requieren obtener los parámetros de la URL, luego pasárselos a los servicios y al finalizar los template con el proposito de que muestren los datos. unas de sus propiedades son `snapshot.params['id']` esto sirve para obtener el parámetro de la URL y para parámetros de consulta utilizamos `this.route.snapshot.queryParams["filter"]`.

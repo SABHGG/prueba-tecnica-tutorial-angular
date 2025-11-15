@@ -2,9 +2,14 @@
     display: grid;
     column-gap: 14px;
     row-gap: 14px;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 400px));
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     margin-top: 50px;
     justify-content: space-around;
+}
+
+form {
+    display: flex;
+    justify-content: end;
 }
 
 input[type="text"] {
@@ -37,5 +42,9 @@ button {
 @media (max-width: 499px) {
     .results {
         grid-template-columns: 1fr;
+    }
+
+    input[type="text"] {
+        width: 100%;
     }
 }

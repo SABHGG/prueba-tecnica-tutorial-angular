@@ -1,0 +1,40 @@
+<article>
+  <img
+    class="listing-photo"
+    [src]="housingLocation?.photo"
+    alt="Exterior photo of {{ housingLocation?.name }}"
+    crossorigin
+  />
+  <section>
+    <div class="listing-description">
+      <h2 class="listing-heading">{{ housingLocation?.name }}</h2>
+      <p class="listing-location">
+        {{ housingLocation?.city }}, {{ housingLocation?.state }}
+      </p>
+    </div>
+    <div class="listing-features">
+      <h2 class="section-heading">About this housing location</h2>
+      <div class="secction-content">
+        <p>
+          Units available:
+          <span class="secction-p"
+            >{{ housingLocation?.availableUnits ?
+            housingLocation?.availableUnits :"out of stock" }}</span
+          >
+        </p>
+        <p>
+          Does this location have wifi:
+          <span class="secction-p"
+            >{{ housingLocation?.wifi ? "Yes" : "No" }}</span
+          >
+        </p>
+        <p>
+          Does this location have laundry:
+          <span class="secction-p"
+            >{{ housingLocation?.laundry ? "Yes" : "No" }}</span
+          >
+        </p>
+      </div>
+    </div>
+  </section>
+</article>
